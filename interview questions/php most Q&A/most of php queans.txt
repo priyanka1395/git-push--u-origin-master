@@ -1,0 +1,159 @@
+
+########################################################## HTML QUESTIONS & ANSWERS ####################################################################
+(1) what is doctype in html ?
+ans-: this is document type dedclaration.that must be in the beging of each & every html fiels.
+			ex:
+			<doctype=html>
+			<html>
+			</html>
+			
+(2) what is meta teg ?
+ans-: we need to type in head tag-:
+meta teg is specialy used for digital marcketing & bringing the web site  on to top of google search ....
+	ex: 
+	<html>
+		<head>
+			<title> pawan <//title> title only 130 createts
+				<meta type="keyword"> content="best house keeping in bangalore, best water supplier in bangalore"/> // google is content are support only 180 crectetr
+			<meta  type="discreption" content="is the best water supplirs "/> // only 160 chateres
+		</head>
+	</html>
+	
+(3) diffrence between radio button & chackbox ?  // example on que3.html
+ans:- radio button & chack box are controls of html
+
+		Chackbox
+	(a) in case of cheack box we can select multiple check based at a time ..
+
+
+		Radio
+	(a) we can  not select multipal radio button at a time ...
+	
+(4) what is enctype in html ?
+ans:- enctype is property of form tag in html
+		it is used to encrypt the form data while sending to the server it helps to upload the fiels as well ...
+			ex:-
+			<form method="#" action="#" enctype="multipart/form-data">
+			
+(5) what is diffrence between submit & button ?
+ans:- both are html tag to drow a button.
+				BUTTON
+			(a) we need to implement javascript/ jqurey to make it function
+			
+				SUBMIT
+			(a) it not requid any js/jquery to function, it works only to function from action.
+			
+(6) how to submit a fom without submit button or using java script ? //  example on que6.html
+ans:-    
+			(1) we need a button or link
+			(2) we need a js function
+			(3) on click of a button or link we can call js function
+			(4) js function can submit a form using submit() function
+			
+			
+			
+			
+########################################################## JS QUESTIONS & ANSWERS ####################################################################
+(1) what is java script ?
+ans:- Search in google :-
+
+
+(2) how to pick the value of a textbox using js ?
+ans:-	document.getElementById("fname").value;
+
+
+(3) what is DOM ?
+ans:-  documnent object model: DOM:----document.getElementById("fname").value;
+in current page the browser will treat as a document dom say each & every document should have the multipal controls & every control must be have id
+then only we can assign or pick the value dynamicelly....
+
+
+(4) how to submit a fom using javascript ?
+ans:- document.getElementById("frmid").submit();
+
+
+(5) how to send email using java script ?
+ans:-  <a href="mailto:abc@gmail.com?subject=Hi How Are You" target="_new"> Email Us </a>
+
+
+(6) how to convert string to int using js ?
+ans:- (a) for int: parseInt(number);
+	  (b) for float: parsrFloat(number);
+
+	  
+(7) how to get the current second, minutes, hours in js ?
+ams:- obj=new Date();
+	  (a)second=obj.getSecond();
+	  
+	  (b)minutes=obj.getMinutes();
+	  
+	  (c) hours= obj.getHours(); 
+	  
+	####################################################### PHP QUESTIONS & ANSWER ###################################################################
+
+(1) php stand for ?
+ans: hypertext preprocesser ........
+
+
+(2) what is difference between GET & POST / what is GET & POST ?
+ans:- both are the globle array to using submit the form data to server ...
+							
+							Get																	Post
+						(1)	is submit the data to server in through url,				(1)it submit the data to server in hidden mode and it is well secure
+							which is not secure 
+						(2) we can submit the limited data to  server					(2) we can submit unlimited data to server.
+		
+		
+(3) what is query string ?
+ans:- the data we pass from one page to other page through url this is called query string.
+		ex:- http://loclhost/ecommerce/editproudct.php?id=100;
+		
+(4) how to receive url data / how to receive query string data ?
+ans:- this is a globle variable called $_REQUEST[];
+	ex:-
+		$_REQUEST['id'];
+		
+(5) diffrence between include(); & requeire(); ?
+ans:- both are built_in_function in php to includ the external php file....
+									require											includ
+						(1)  if exteing file does not exist if					(1) if exteing file does not exist						
+							will through fatal error and page 						it will give waring message and page exealtion will be continues
+							will stop worning
+						
+(6) what are type error in php ?
+ans:- (1) Notice    --> when small error occured
+	(2) warning    --> bigger error then notic
+	(3) fatal error  --> nothing will work it will stop working.
+	
+(7) difference between impload & expload();
+ans:- both are the built_in_function in php.....
+					impload														expload
+				(1) it will conver from array to string						(1) it will conver from string to array...
+				$string=imload("@@",array1);									$ar1=expload("@@",string);
+				
+(8) how to connect php to mysql ?
+ans:-
+		mysql_connect("hostname","username","password")
+
+(9) how to connect ta perticuler database ?
+mysql_select_db("dbname","connection object");
+
+(10) what is difference between mysql_connect & mysql_pconnect ?
+ans:- both are the function to connect with server ......
+		mysql_pconnect													mysql_connect
+	(1) it will connect to server automaticly,				(1) it will connect to server automatically,
+	and affter excetion of query we need close					and after exeation of the query it will
+	the connection manually using mysql_close($conn);				close the connection automatically
+	(2) its make application slow 								(2) it make application fast
+	
+(11) using how many way can we fetch the data from the database ?
+ans:-
+		(1) mysql_fetch_array(); ==> numeric array , associative array
+		(2) mysql_fetch_object(); ==> object array
+		(3) mysql_fetch_row(); ==> array  
+		(4) mysql_fetch_assoc(); ==> associative array
+		
+(12) what is diffrence between mysql_fetch_array & mysql_fetch_assoc ?
+					mysql_fetch_array();                        				mysql_fetch_assoc();
+			(1) it will return numaeric array as well 					(1) it will return only numeric array formate
+			associative array...

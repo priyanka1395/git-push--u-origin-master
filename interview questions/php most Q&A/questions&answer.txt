@@ -1,0 +1,266 @@
+							####HTML#####
+1)what is doctype declaration?
+ans:it inform to browser/user agens that html codes starts bellow,else it will take more time to identify the file and to load the page.
+example:<!DOCTYPE html>
+	  <html>
+	  <head>
+	  <meta>
+	  <title>.....</title>
+	  </head>
+	  <body>
+	  hi..
+	  </body>
+	  </html>
+
+2)what is meta tag in html?
+ans:meta tag used to increase the website visits,rank,trafic,on websites using some property of meta tag as below,SEO purpose
+	<meta type="title" content="best marker seller in bangalore"/>96char
+	<meta type="keyword" content="marker seller,best marker seller in bangalore"/>130char
+	<meta type="description" content="we are the best marker seller in bangalore"/>130char
+
+3)what is the difference between checkbox&radio button?
+ans:checkbox				radio
+   1)we can select multiple at     we can not select multiple radio button at a time
+     a time
+
+4)types of button in html?
+ans:four types are there..1)<input type="button"/>
+	2)<input type="reset"/>
+	3)<input type="submit"/>
+	4)<button>submit</button>
+
+5)difference between button&submit?
+ans:			submit				button
+1)in case submit button javascript is         1) in case of only button we need javascript to submit the data to the action page.
+  not required to submit the data to server
+  it will look for form action file.
+
+6)what is enctype in html?
+ans:it is called encryption type is the property of form tag where<enctype=multipart/form-data> is the value..it help while uploading the file.. and used to encrypt the data in multiple format while uploading the file.
+note:-without enctype file upload is not possible.
+
+7)how to submit the form without a submit button??
+ans:in the jaavascript there is the function "document.getElementById("form1").submit();"
+
+8)what is the different between html4 and html5?
+ans:html5 is a combination of html,css,js and jquery...(2)in html5 there is a lots of a new tag example:<input type="number">this is created textbox..<input type="date">...in html5 few tag is deleted like a address tag is not available
+
+9)how to set a background image using a html?
+ans:<body background="1.jpg">
+
+10)for commment?
+ans:<!--<label>Hi</label>----->
+-------------------------------------------------------------------------------------------------------------------------------------
+
+						###css###
+1)what is css?what is use of css?what do u mean by css?
+ans)css to beautify/to change the look and feel html pages.
+
+2)what is selectors in css?
+ans:in css all classes,id,html,tags are called as a selectors where we apply css property & values is called selectors in css terminology.
+example:selectors{
+		   property:value;
+		 }
+
+3)what is diff between class & id in css & html?
+ans:if there is chaance to repeat thee same fetures of css in html we shold go for a class ..class is denotes by ('.')...if one is being implemented only one time in a page go for id....id denotes by #.
+
+4)what is a float?
+ans:it is using for a align like left and right..it will adjusting right side or left side the page
+
+5)how to apply background image in css?
+ans:1)div{
+        
+	background:url('1.jpg');
+	
+	}
+	2)background-image:url("1.jpg");
+6)what is diff between css & css3?
+ans:                             
+ans:css3 is a combination of jquery and html5...css is a simple.
+7)what is the different between % and px??
+ans:if u r giving the px the height and width property will fixed....if u r giving % its up to the display area...
+
+8)wt is the different between padding and margin?
+ans:margin reflects outside and padding reflects inside..
+------------------------------------------------------------------------------------------------------------------------------------
+							####MYSQL####
+1)what version of my sql version using?
+ans:5
+
+2)what is database?
+ans:collection of multiple tables interlinked together using primarykey and foreign key.
+
+3)what is table?
+ans:it is dtails,description about an entity.
+
+4)what is entity?
+ans:the objects display infront of our eyes.
+
+5)types of keys?
+ans:primary key , foreign key , candidate key, alternate key, composite key.
+
+candidate key:in a table all the columns are called candidate key.
+
+primary key:column in table  is responsible to connect more than one table is called primary key.
+note:-there is policy name intity intignity 
+a)it should not contain null value.
+b)it should not contain duplicate value.
+
+foreign key:column in table  is responsible to connect more than one table is called foreign key.
+note:-there is policy name referencing intignity 
+a)it should not contain null value.
+b)it should contain same as a primary key.
+
+alternate key=candidate key-primary key.
+
+composite key:   in case there is no column in table to fetch the unique data. we get help after mixing multiple column as a below 
+		 is called as a composite key  concept.
+
+6)how to create db in mysql?
+ans:create database <>;
+
+7)how to create table in mysql?
+ans:
+		create table <tablename>
+		(colom1 datatype(length),
+		 col2 datatype(length),
+		 col3 datatype(length),
+		 col4 datatype(length),
+		 primary key(colomn Name));   
+
+8)what is the max&min length of database name,column name,table name in mysql?
+ans:min-1char
+    max-64char
+    note:-no space,combination of alpha numeric with,without under score.
+
+9)what is the normalization?
+ans:normalization is a tecjnique where it avoid redudancy of database(avoid duplicate entry of data in table).    
+types of normalization: a)1nf//explain tommorrow
+			b)2nf
+			c)3nf
+			d)4nf
+			e)5nf
+
+10)how to fetch the second highest salary from the table?
+ans:select * from emp
+    order by salary desc limit 1,2;//explain tommorrow//asc is come like lowest to highest//desc is like as a highest to lowest.
+
+11)types of join in mysql?
+
+ans:to extract the data from multiple rdbms table..rdbms is the technique where we store the related data into multiple table..while fetching the data or extracting the data we used the multiple techniques to get the multiple data from the multiple table..
+    	
+	a)left join=>
+	b)right join=>
+	c)inner join=>
+	d)full join=>
+	e)cross join=>
+	f)left outter=>
+	g)right outer=>
+	h)self join=>
+    
+
+12)diiference between left join & right join?
+ans:     left join				    right join
+     1)left join fetch all data from main         1)it fetch all data from 2nd table and only matching data from 1st table(main table)
+	table (1st table) and only matching
+	data from 2nd table(reference table)
+	syntax:select emp.*,salary.* from employee 
+		left outer join on emp.id=salary.empid
+
+13)what are the storage engines available in mysql?
+ans:we have seven engin.
+	1)innodb
+	2)blackhole
+	3)memory
+	4)csv
+	5)myisam
+	6)archive
+	7)mrg_myisam
+
+14)what is storage engine in mysql?
+ans:this is a one method of arrangment data in memory(hard disk).
+
+15)what is the default storage engine in mysql?
+ans:in mysql 4 version default is MyISAM and in mysql>=5 version default is innoDB
+
+16)difference between myisam & innodb?
+ans:both are the storage engine of the mysql.
+
+		MyISAM                                innoDB
+  1)it does not support primary key & foreign      it support primary key and foreign key concept.
+     key concept.
+  2)storage capacity is limited.                   storage capacity is unlimited(up to memory 0r hard disk space)
+  3)default storage engine in mysql 4.             default storage engine in mysql 5 & higher version.
+
+-------------------------------------------------------------------------------------------------------------------------
+						       ####PHP####
+1)what is the diff between GET,POST,&REQUEST.?
+ans:GET & POST both are the method to post the data to server.
+			GET					POST
+1)its display the data in url while submiting to server.      it does not display the data in url(hidden) while submitting to secure  
+  which is not secured.                                       ,server which is secure.
+2)it has limitation of data while submiting to server.        no limitation depend on server setting.
+3)in get method conformation is not required while            in post method while resubmitting the data it ask for conformation.
+   re-sending the data to server.
+
+REQUEST:in request method using for a receive the data from url.
+
+2)how to connect php to mysql 0r what is mysql_connect();
+ans:mysql_connect("localhost","root","");
+
+3)how to select a db in mysql?
+ans:mysql_select_db("dbname",server object);
+
+4)wt is the diff between mysql_connect & mysql_pconnect?
+ans:
+		mysql_connect()						mysql_pconnect()
+automatically start and close function is work in this.      here its manually.
+its take some time for execute                               its take too long time for execute.
+
+5)diff between implode & explode?
+ans:both are the php built in function:
+				implod                             explod
+its convert from array to string.                     its convert from string to array.
+ex:$ar1=array(10,20,30):                              $ar2=explode("#",$str1);
+$str1=implode("#",$ar1);                              echo"<pre>";
+echo $str1://10#20#30                                 print_r($ar2);
+                                                      echo"</pre>";//o=>10
+								     1=>20
+								     2=>30//reffer it next time more
+6)substring implimantation?
+ans:$a="102abc135";
+    how to print only "abc"?
+    ans:syntax:using substr(string,startpoint,no.of elements);
+	$data=substr($a,3,3);
+	echo $data//abc
+    
+    how to print lat number?
+	$data=substr($a,0,-2);
+
+7)to get length of the string?
+$a="abc  xyz";
+$length=strlen($a);//8;
+how to count/length of an array?
+sizeof(arrayname)
+count(arrayname)
+
+8)include,include once,require,require once ??
+ans:all are the built in method  to include the external file..
+	include("dbconfig.php");//warning msg will come
+	required("dbconfig.php");//fatal error..
+
+9)how many types of error?
+ans:fatal,warning,notice...
+	1)fatal- normal msg.
+	2)warning-small error nothing is happenning..
+	3)notice-not work
+
+						codeigniter
+ques:http://localhost/codeigniter/index.php/welcome/test
+
+ans:http://localhost is a host name
+	codeigniter is a domain.php
+	index.php is a router
+	welcome is a controller class name
+	test is a function name

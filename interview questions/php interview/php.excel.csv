@@ -1,0 +1,51 @@
+2,Functions used to include a file in a PHP page is ?,includes(),include(),requires(),Both (b) and (c),2,text,0,8/20/2015 6:39
+3,Difference between include() and require() is?,"If file not found, require() gives fatal error and halt the excecution 	   whereas include() gives warning and continue the execution.","If file not found, require() gives warning and continue the excecution 	   whereas include() gives fatal error and halt the execution.",If file not found both gives warning.,No difference,1,text,0,8/20/2015 6:42
+4,Correct syntax to start and destroy a session are ?,"session_start() , session_destroy()","start_session(), destroy_session()","session_initialize(), session_destroy()","session_start(), session_end()",1,text,0,8/20/2015 6:48
+5,Three types of errors in PHP are ?,"Notices, critical and Fatal","Notices, Halt and Fatal","Notices, Warnings and Fatal",None of the above,3,text,0,8/20/2015 6:50
+6,"A form can be submitted without submit button in the following ways, choose correct one?","Using javascript, document.FormName.submit()","Using PHP, document.FormName.post()","Using HTML, document.submit()",None of the above,1,text,0,8/20/2015 6:51
+7,The default excecution time of a PHP scripts are ?,45 seconds,25 seconds,30 seconds,35 seconds,3,text,0,8/20/2015 6:54
+8,The configuration file for PHP is?,php.cfg,php.ins, php.ini,None of the above,3,text,0,8/20/2015 6:55
+9,The default excecution time of a script can be increased by setting the following parameter to required value in seconds?,max_excecution_time,max_time_excecution,max_default_time,None of the above,1,text,0,8/20/2015 6:56
+10,PHP is _______?,Client-side scripting language,Server-side scripting language,Both (a) and (b),None of the above,2,text,0,8/20/2015 6:59
+11,Choose the correct one?,GET method is secure and does not appear in URL.,GET method is insecure and appear in URL.,POST method is insecure,None of the above.,2,text,0,8/20/2015 7:03
+15,"Default maximum file upload size ___ and can be changed	by setting ___ parameter in configuration file?","5M, upload_max_size","4M, upload_max_size","2M, upload_max_filesize","3M, upload_max_filesize",4,text,0,8/20/2015 7:11
+16,"To upload a file, ___ is mandatory in a form tag?","enctype=""multipart/data""","enctype=""multipart/form_data""","enctype=""multipart/form-data""",None of the above,3,text,0,8/20/2015 7:13
+17,The default maximum number of files uploaded in a single request is _____?,10,20,25,None of the above,2,text,0,8/20/2015 7:14
+18,The PHP function used to dynamically (using code)  change the php.ini setting is _____?,set_php_ini(),set_ini(),ini_set(),None of the above,3,text,0,8/20/2015 7:15
+19,Function to break an string into an array is ___?,implode(),to_array(),str_array(),explode(),4,text,0,8/20/2015 7:16
+20,Function to join array element into a string is ___?,explode(), implode(),to_array(),str_array(),2,text,0,8/20/2015 7:17
+21,Function to check if an element exist in an array is _____?,find_array(),in_array(),exist_array(),None of the above,2,text,0,8/20/2015 7:19
+22,Function to count the total number of elements in an array named $books is ___?,total($books),total_count($books),count_elements($books),count($books),4,text,0,8/20/2015 7:20
+23,Choose the correct functions used to fetch the records from a database?,"mysql_fetch(), mysql_fetch_assoc() and mysql_object()","mysql_fetch_array(), mysql_fetch_assoc() and mysql_fetch_object()","mysql_fetch_arr(), mysql_fetch_associative() and mysql_fetch_obj()",None of the above,2,text,0,8/20/2015 7:21
+24,Types of arrays in PHP are ?,"Indexed, Associative and Multi-dimensional","Indexed, Commutative and Multi-dimensional","Indexed, Definitive and Multi-dimensional",None of the above,1,text,0,8/20/2015 7:22
+25,Which function is used to strip whitepaces from beginning and end of a string?,rtrim(),ltrim(),trim(),cut(),3,text,0,8/20/2015 7:23
+26,PHP function to destroy a variable is ___?,delete(),unlink(),trash(),unset(),4,text,0,8/20/2015 7:24
+28,"To check if variable is set and not NULL,  we use function?",is_exist(),isset(),is_set(),set(),2,text,0,8/20/2015 7:34
+29,which variable that stores the IP address of a user is?,$_GLOBAL,$_IPADDR,REMOTE_ADDR,None of the above,3,text,0,8/20/2015 7:35
+30,What is the use of mysql_pconnect()?,Used to return an identifier of an existing database conection.,Used to make persistent database connection.,Both (a) and (b),None of the above,2,text,0,8/20/2015 7:37
+31,"To send a mail in PHP, the correct format is ?","email($to, $subject, $message)","mail($to, $subject, $message)","send_mail($to, $subject, $message)",None of the above,2,text,0,8/20/2015 7:38
+32,What is the use of $_SESSION[] ?,To register static value,To start a session,To store varibles of current session,None of these,3,text,0,8/20/2015 7:40
+33,"Which of the following is single line comment in PHP ?
+	",#This is comment,;This is comment,None of these,//This is comment,4,text,0,8/20/2015 7:41
+35,1440056670php4.PNG,a,b,c,d,4,image,0,8/20/2015 7:44
+36,PHP stands for ?,Perl HTML preprocessor,HTML preprocessor,Hypertext Preprocessor,None of these,3,text,0,8/20/2015 8:15
+37,Choose the correct one ?,PHP supports multi inheritence,PHP supports single inheritence,Both (a) and (b),None,2,text,0,8/20/2015 8:16
+40,1440059145php5.PNG,a,b,c,d,2,image,0,8/20/2015 8:25
+41,$_GLOBAL is a ____ and it references ______ ?,"Super global, all variable with global scope.","Local array, all variable with global scope.","Local array, all variable with global and local scope.",Not an Array.,1,text,0,8/20/2015 8:30
+42,Which one is correct statement about $_FILES ?,It is an associative array of items uploaded via GET method.,It is an associative array of items uploaded via POST method.,It is an associative array of items uploaded via POST and GET method.,None of these,2,text,0,8/20/2015 8:33
+43,1440059646php6.PNG,a,b,c,d,1,image,0,8/20/2015 8:34
+44,Comparision if ($a===$b) returns?,TRUE if both values are same.,TRUE if both values as well as datatypes are same.,TRUE in all conditions,None of the above,2,text,0,8/20/2015 8:35
+45,1440059772php7.PNG,a,b,c,d,1,image,0,8/20/2015 8:36
+46,What is the default session time in PHP ?,30 minutes,60 minutes,Untill closing of a browser,None of these,3,text,0,8/20/2015 8:37
+47,Function file_get_contents() are used to ?,Read entire file as an object.,Read entire file as a string.,Read entire file as a array.,Read the contents and return a pointer to a file.,2,text,0,8/20/2015 8:39
+49,Correct way to invoke a method in a class is?,object->methodName();,$object->methodName();,$object>methodName();,$object<methodName();,2,text,0,8/20/2015 8:42
+51,"If the class name is Calculate, right way to call a constant is	?",echo Calculate->g;, echo $g;,echo Calculate::g,echo Calculate<-g,3,text,0,8/20/2015 8:44
+52,"If a class name is Library, how to instantiate an object, choose the correct one?",$object=new Library();,$object=Library();,object=new Library;,object=new $Library();,1,text,0,8/20/2015 8:45
+53,PHP declares constructor by the name?,__construct();,className();,function construct();,function __construct();,4,text,0,8/20/2015 8:46
+55,The keyword used to refer to properties/methods within a class is?,final,public,this,static,4,text,0,8/20/2015 8:48
+56,"If you want your member(functions/variabes) to be accessible
+within class itself only, that member is declared as?",Protected,public,private,final,3,text,0,8/20/2015 8:49
+57,"If you want your member(functions/variabes) to be accessible
+everywhere(outside the class), that member is declared as?",Protected,public,private,static,2,text,0,8/20/2015 8:51
+58,"If you want your member (functions/variabes) to be accessible
+within a class as well as inherited class only that member is declared as?",Protected,constant,private,final,1,text,0,8/20/2015 8:52

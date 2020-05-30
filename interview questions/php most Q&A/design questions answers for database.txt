@@ -1,0 +1,326 @@
+1 how to create data base in my sql?
+         synax:
+		     1)
+			 create database <database name>
+			 (eg)create database college;
+			 
+			 
+2)what is the max and min database name?
+         max:64char; min:1char
+	
+3)what is database?
+        Database is a collection of related tables.
+		
+4)How to create a table in my sql? 
+           syntax:
+		     create table <tablename>
+			 
+			 (col1 datatype size;
+			 col2 datatype size;
+			 col3 datatype size;);
+			 
+			 (eg)
+			    create table student
+				(id int auto_increment,
+				name varchar(255),
+				mobile int,
+				primary key(id));
+5)how to alter table?
+            (adding new column/deleting a column)	
+         syntex:
+             Alter table <tablename>
+            add newcolname datatype size;
+         eg)alter table student
+             add section varchar(20);		 
+			 
+			 eg)alter table student
+			 add class varchar(20) after mobile
+			eg)alter table student
+			add lastgrade varchar(20),
+			add currentgrade varchar(20);
+			
+6)how to modify /change the existing column name in my sql table?
+                      syntex:
+                           alter table <tablename>
+change <oldcolname> <new colname> datatype size;
+           eg)
+                alter table student
+              change mobile mobileno bigint(12);	
+
+7)how to drop a column from an existing mysql table?
+                  syn:
+                     alter table <tablename>
+                      drop column <column name>
+                   eg)
+                      alter table student
+                       drop column lastgrade;	
+
+8)how to drop a mysql table?
+               syn:
+                   drop table<tablename>
+                eg)drop table student;	
+8.1) how to insert value in table?
+Ans:-
+insert into employee(name,email,mobile,dept,salary,desiginition,city)
+ values ('jeba','bibin@gmail','9999999999','tech','20000','developer','chennai');	
+ 
+9)how to fetch the data from mysql table?
+             1)select * from <table>
+             2)select col1,col2,col3,........from <table>
+           
+         eg)1.
+		 select * 
+			from employee;
+                       2.
+					   select name 
+			 from employee;	
+	
+                       3.
+					   select name,email,mobile 
+			 from employee;	
+
+10)what is order by class?
+              syntax: 
+			  select * from <table> order by <colum name> asc/desc
+              ex)1.
+			  select * 
+		from employee 
+		order by name;
+	
+                 2.
+				 select * 
+		from employee 
+		order by name asc;
+
+                 3.
+				 select * 
+		   from employee	
+		   order by name desc;
+	
+                 4.
+				 select * 
+		   from employee 
+		   order by salary asc;
+
+12)what is group by class?
+             syntax:
+			 select * from <table> group by <colum name>
+
+    "they see and make similer first char as a group"
+
+             eg)select * 
+		from employee 
+		group by name;	
+
+11)write a query to change(fetch)name as employee name?
+
+             Ans:1.
+			 select name as employee_name 
+	           from employee; 
+			  
+12)how to paste the name of all employee which start with a?	
+                 syntax:1.
+				 select * 
+			  from employee 
+			  where name like '%a';		  
+				
+
+			2.
+			select * 
+			  from employee 
+			  where name like 'a%';
+
+			3.
+			select * 
+			  from employee
+			  where name like '%a%';	
+
+13)how to see the highest salary of the employee?
+                       eg)1.
+					   select max(salary) 
+			    from employee;	
+                          2.
+						  select max(salary) as max_salary 
+			    from employee;
+                          3.
+						  select min(salary) as min_salary 
+			    from employee;	
+                          4.
+						  select avg(salary) as average_salary
+			    from employee;
+                          5.
+						  select sum(salary) as total_salary 
+			    from employee;
+						   
+14)how to count no of rows available in a mysql table?	
+                       eg)1.
+					   select count(*) as total_user 
+			    from employee;
+			  2.
+			  select name,count(*) as total_user 
+			    from employee
+			    having count(*)>2;		
+
+15)how to fetch the second higher salay of the employee?
+           syntax:
+		   select * from employee order by salary desc limit start point ,no of row;	
+                   select * 
+		   from employee 
+		   order by salary desc
+		   limit 1,1;	
+					1 where
+					2 in
+					3 not in
+					4 between
+					5 =
+					6 !=
+					7 not like
+16) how to get 1st 5 record in mysql table ?
+				1.
+				select * from employee
+				where id<=5;
+				
+17) how to uses of in command  ?
+					1.
+					select * from employee
+					where id in ('1','3','5');
+					2.
+					select * from employee
+					where id not in ('1','3','5');
+					
+18) show the details of imployee those are staying in bangalore ?
+					1.
+					select * from employee
+					where city in ('bangalore');
+					2.
+					select * from employee
+					where city in ('bangalore','chennai');
+					
+							3.
+					select * from employee
+					where city not in ('bangalore');
+					3.
+					select * from employee
+					where city not in ('bangalore','chennai');
+		email !='bijen@gmail.com';
+19) how to display the salary details of all emp whose salary is between 2 number ?
+					1.
+						select * from employee	
+						
+						
+						where salary BETWEEN 10000 and 100000;
+		
+20) how to show the deta using = ?
+									1
+									select * from employee
+									where email='bijen@gmail.com';
+							
+21) how to show the deta using != ?
+									1
+									select * from employee
+									where 
+									
+22) how to fetch the data using NOT LIKE ?
+									1
+									select * from employee
+									where name not like '%b%';
+									1 other
+									select * from employee
+									where name not like '%p';
+									
+23) 
+			1
+				select employee.name, employee.city, employee.salary,
+				department.name as department_name
+				from employee, department
+				where employee.department=department.id;
+				
+			
+				1 left
+				2 left out
+				3 right
+				4 right out
+				5 inner
+				6 direct
+				7 self
+				
+(24) difference between order by & group by ?
+
+order by
+1 to fetch and display the data in ASC or DESC order
+
+group by
+
+
+condition 
+syntx
+		select * from <table> where <condition>
+		ex; 
+			select * from employee where id<=2;
+			
+what is like?
+sy :
+		select * from <table> where name like'a%'; // all the employee details by name start from a
+		select * from employee where fullname like'%a'; // all the employee details by name end with a
+		select * from employee where fullname like'%a%'; // all the employee details by name between of name
+		
+how to count number of column in mysql table ?
+		
+		select count(*) from employee;
+				both r semilore 
+		select count(*) as total_row from employee;
+		
+how to fetch max $ min salary from table ?
+ select max(column name) as max_sal from table;
+ 
+ ex;
+ select max(salary) as max_sal from employee;
+ 
+ ex of min salary
+ select max(salary) as min_sal from employee;
+ 
+ 
+ between in salary ?
+ 
+ syn select * from employee where colname between start and end;
+ 
+		select * from employee where salary between 2000 and 10000;
+		
+Question next    in/ not in
+
+		select * from employee where id not in('2','3','5');
+		
+	update
+			(1) range update
+			(2) conditional
+			(3) update all 
+		sty 
+			update <table name>
+			set columname=<new value>;
+			
+			ex:
+			update employee
+			set salary=12000;
+			
+			(2) <condition>
+			ex
+			  update employee
+			  set salary=2000
+			  where id>=2;
+			  
+			(4)  
+			update employee
+			  set salary=2000
+			 update employee
+			 set salary=5000;
+			 fullname="xyz"
+			 where emp_id=1
+			 and email='abc@gmail.com';
+			 
+			 
+			 
+			 
+			 
+			
+	
+			 

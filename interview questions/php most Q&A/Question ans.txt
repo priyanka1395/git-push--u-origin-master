@@ -1,0 +1,66 @@
+
+
+Q1: What is PHP?
+
+Ans: PHP stands for PHP Hypertext Processor. 
+It?s a server side scripting language generally used for making web based applications and dynamic websites. In 1995, Rasmus Lerdorf created PHP and it was one of the first scripting languages that could be embedded inside plain HTML.
+
+Q2: Difference between include and require functions?
+
+Ans:Both these functions differ in how they handle failures that occur. Suppose a file is not found by the include() function, then it will simply give a warning and script execution will not be interrupted. However, if a file is not found using a require() function, it will throw up a fatal warning and stop the script execution.
+
+
+-----------------------------------------------------------------------------------------------
+Related Posts:
+
+What is Search Engine ?
+Top 10 SEO Interview Question and Answers
+
+-----------------------------------------------------------------------------------------------
+Q3: What is a CAPTCHA & when do you use it?
+
+Ans:CAPTCHA is the short form of Completely Automated Public Turing Test. It?s a step taken to ensure that a feature is not abused in a way it?s not meant to be used. We use CAPTCHAS for general form submissions, registrations, user generated content and so on to prevent spam bots from clogging up the system or spamming.
+
+Q4: What is the difference between GET and POST functions?
+
+Ans:GET function is normally used when the result of using this function does not cause any visible change on the state of the world. This is normally used in cases like searching from a database where no changes are made to the system.
+ 
+POST function is used when there is a visible change on the state of the world. When we use a POST function,  normally the system changes. E.g. when we add, delete or modify values from a database. A simple example is a form submission.
+
+Q5: Is it possible to know details about the browser being used to view a PHP website?
+
+Ans:Yes. We can use the get_browser() function to get the details of the browser a user is using. This information is usually found inside the browscap.ini file.
+
+Q6: Is it possible to create a database using PHP and MySQL?
+
+Ans:Yes. We can create a database using the function mysql_create_db(“<Insert database name here>”).
+
+Q7: How many times is it possible to use an include function in a PHP page?
+
+Ans:We can use include function multiple times in any dynamically generated PHP page. However, it?s not considered a good practice to have multiple include functions on the same page.
+
+Q8: Can you tell me whether objects are passed by value or by reference?
+
+Ans:In PHP, everything is usually passed by value and not by reference.
+
+Q9: What is an efficient way to combine two variables in PHP?
+
+Ans:There are two different ways to combine variables in PHP. Let?s take an example.
+
+    $var1 = „Hello „;
+    $var2 = „World?;
+
+We can combine it using the two codes below
+
+    $var 3 = $var1.$var2; and
+    $var3 = “$var1$var2?;
+
+It?s usually seen that, for large datasets, the first method outperforms the second one.
+
+Q10: What is the current version of PHP and MYSQL?
+
+Ans:The current versions are
+
+    PHP – 5.4.1 (As of this writing. Make sure you know the current version when you go in for your interview)
+    MySQL- 5.5.23
+
